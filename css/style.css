@@ -1,5 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(14, 14, 14);
+    margin: 0;
+    padding: 0;
 }
 .site-header{
     font-family: 'Berkshire Swash', cursive;
@@ -12,7 +15,39 @@ body {
 }
 .background{
     background-color: black;
-    height: 80vh;
+    height: 70vh;
     object-fit: cover;
+    margin-bottom: 100px;
     
+}
+.btn{
+    color: antiquewhite;
+    background-color: rgb(255, 102, 0);
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.card-background{
+    background-color: rgb(2, 2, 17);
+    color: antiquewhite; 
+}
+.btn-budget{
+    color: antiquewhite;
+    background-color: rgb(255, 102, 0);
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn-total{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.input-w{
+    width: 42%;
+}
+.line{
+    margin-top: 200px;
+    color: antiquewhite;
 }

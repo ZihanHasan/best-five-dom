@@ -21,15 +21,11 @@ function btnDisable(player){
 function getInputValueById(inputFieldId){
     
     const inputField = document.getElementById(inputFieldId);
-    const inputFieldValue = inputField.value; 
-    if(typeof inputFieldValue !== 'number' || inputFieldValue === ''){
-        alert('Please provide a valid input....!!')
-    }
-    else{
-        const inputFieldValueNumber = parseFloat(inputFieldValue);
-        inputField.value = '';
-        return inputFieldValueNumber;
-    }
+    const inputFieldValue = inputField.value;   
+    const inputFieldValueNumber = parseFloat(inputFieldValue);
+    inputField.value = '';
+    return inputFieldValueNumber;
+ 
     
 }
 

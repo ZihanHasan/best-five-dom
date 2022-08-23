@@ -1,113 +1,107 @@
+// Player - 1
+
 document.getElementById('player-1').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-1').removeAttribute('disabled');
+        playerLimit('player-1');
     }
-    else{
-        const player1 = document.getElementById('player-name-1');
-        const player1text = player1.innerText;
+    else{ 
+        const player1text = getPlayerName('player-name-1')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player1text;
         playerList.appendChild(li);
-        document.getElementById('player-1').setAttribute('disabled',true);
-        document.getElementById('player-1').style.color = 'orange';
+        btnDisable('player-1');
     }
 })
 
+// Player - 2
+
 document.getElementById('player-2').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-2').removeAttribute('disabled');
+        playerLimit('player-2');
     }
-    else{
-        const player2 = document.getElementById('player-name-2');
-        const player2text = player2.innerText;
+    else{ 
+        const player2text = getPlayerName('player-name-2')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player2text;
         playerList.appendChild(li);
-        document.getElementById('player-2').setAttribute('disabled',true);
-        document.getElementById('player-2').style.color = 'orange';
+        btnDisable('player-2');
     }
 })
 
+// Player - 3
+
 document.getElementById('player-3').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-3').removeAttribute('disabled');
+        playerLimit('player-3');
     }
-    else{
-        const player3 = document.getElementById('player-name-3');
-        const player3text = player3.innerText;
+    else{ 
+        const player3text = getPlayerName('player-name-3')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player3text;
         playerList.appendChild(li);
-        document.getElementById('player-3').setAttribute('disabled',true);
-        document.getElementById('player-3').style.color = 'orange';
+        btnDisable('player-3');
     }
 })
 
+// Player - 4
+
 document.getElementById('player-4').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-4').removeAttribute('disabled');
+        playerLimit('player-4');
     }
-    else{
-        const player4 = document.getElementById('player-name-4');
-        const player4text = player4.innerText;
+    else{ 
+        const player4text = getPlayerName('player-name-4')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player4text;
         playerList.appendChild(li);
-        document.getElementById('player-4').setAttribute('disabled',true);
-        document.getElementById('player-4').style.color = 'orange';
+        btnDisable('player-4');
     }
 })
 
+// Player - 5
+
 document.getElementById('player-5').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-5').removeAttribute('disabled');
+        playerLimit('player-5');
     }
-    else{
-        const player5 = document.getElementById('player-name-5');
-        const player5text = player5.innerText;
+    else{ 
+        const player5text = getPlayerName('player-name-5')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player5text;
         playerList.appendChild(li);
-        document.getElementById('player-5').setAttribute('disabled',true);
-        document.getElementById('player-5').style.color = 'orange';
+        btnDisable('player-5');
     }
 })
 
+// Player - 6
+
 document.getElementById('player-6').addEventListener('click',function(){
+
     let listLength =  document.getElementById("player-list").children.length;
-    
     if(listLength === 5){
-        alert('No more than 5 players can be added !!!');
-        document.getElementById('player-6').removeAttribute('disabled');
+        playerLimit('player-6');
     }
-    else{
-        const player6 = document.getElementById('player-name-6');
-        const player6text = player6.innerText;
+    else{ 
+        const player6text = getPlayerName('player-name-6')
         const playerList = document.getElementById('player-list');
         const li = document.createElement('li');
         li.innerText = player6text;
         playerList.appendChild(li);
-        document.getElementById('player-6').setAttribute('disabled',true);
-        document.getElementById('player-6').style.color = 'orange';
+        btnDisable('player-6');
     }
 })

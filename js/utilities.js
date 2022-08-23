@@ -19,11 +19,18 @@ function btnDisable(player){
 // Calculator section
 
 function getInputValueById(inputFieldId){
+    
     const inputField = document.getElementById(inputFieldId);
     const inputFieldValue = inputField.value; 
-    const inputFieldValueNumber = parseFloat(inputFieldValue);
-    inputField.value = '';
-    return inputFieldValueNumber;
+    if(typeof inputFieldValue !== 'number' || inputFieldValue === ''){
+        alert('Please provide a valid input....!!')
+    }
+    else{
+        const inputFieldValueNumber = parseFloat(inputFieldValue);
+        inputField.value = '';
+        return inputFieldValueNumber;
+    }
+    
 }
 
 function getPreviousValueById(previousTotalId){
